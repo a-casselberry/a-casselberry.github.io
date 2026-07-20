@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Casselberry - Résumé</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Ashley Casselberry</h1>
+    <p>
+      <a href="https://linkedin.com/in/ashleycasselberry" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://a-casselberry.github.io/">Portfolio</a>
+    </p>
+  </header>
+
+  <nav>
+    <a href="index.html">Résumé</a> |
+    <a href="cover-letter.html">Cover Letter</a> |
+    <a href="career-goals.html">Career Goals</a>
+  </nav>
+
+  <section id="summary">
+    <h2>Professional Summary</h2>
+    <p>IT and data professional completing a B.S. in Information Technology at Western Governors University, with 3+ years of operations experience auditing data, troubleshooting workflow and system issues, and partnering with Product and Engineering teams on system improvements. Skilled in SQL, Excel, and Salesforce reporting, with certifications in ITIL 4, CompTIA A+, CompTIA Network+, and the Google IT Support Specialization.</p>
+  </section>
+
+  <main>
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+
+      <article>
+        <h3>Senior Analyst, Large Groups &ndash; SimplyInsured, Remote</h3>
+        <p><em>September 2025 &ndash; April 2026</em></p>
+        <ul>
+          <li>Partnered with Product and Engineering (Aug 2025&ndash;Apr 2026) to redesign the internal database and website to support large-group applications, expanding platform capability beyond its original small-group focus.</li>
+          <li>Analyzed and validated complex group health insurance data for accuracy, eligibility compliance, and carrier requirements across a large commercial book of business.</li>
+          <li>Investigated data discrepancies in enrollment applications, documenting root cause and resolution recommendations.</li>
+          <li>Managed end-to-end company-wide benefits renewal &mdash; carrier analysis and enrollment processing for ~50 employees &mdash; using Salesforce for reporting.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Senior Analyst, Pre-Renewals &ndash; SimplyInsured, Remote</h3>
+        <p><em>May 2025 &ndash; September 2025</em></p>
+        <ul>
+          <li>Redesigned the pre-renewal audit workflow, cutting dashboard and data errors by 34% and improving on-time SLA performance.</li>
+          <li>Audited and triaged renewal data for a portfolio of up to 350 accounts monthly, resolving recurring data discrepancies.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Analyst, Pre-Renewals &ndash; SimplyInsured, Remote</h3>
+        <p><em>October 2024 &ndash; May 2025</em></p>
+        <ul>
+          <li>Audited pre-renewal data for accuracy and compliance against carrier requirements.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Renewals Coordinator &ndash; SimplyInsured, Remote</h3>
+        <p><em>October 2023 &ndash; October 2024</em></p>
+        <ul>
+          <li>Tracked and validated renewal documentation for compliance across Salesforce and internal systems.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Renewals Submissions Agent &ndash; SimplyInsured, Remote</h3>
+        <p><em>October 2022 &ndash; May 2023</em></p>
+        <ul>
+          <li>Processed and validated group health insurance submissions ahead of employer go-live dates.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Administrative Assistant &ndash; Richie's Repairs, Remote</h3>
+        <p><em>January 2019 &ndash; October 2022</em></p>
+        <ul>
+          <li>Managed office operations, scheduling, and recordkeeping using Google Suite and QuickBooks.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Owner &amp; Operator &ndash; Casselberry Communications LLC, Remote</h3>
+        <p><em>July 2017 &ndash; December 2019</em></p>
+        <ul>
+          <li>Provided independent IT and administrative support (password resets, troubleshooting) through the Arise contracting platform.</li>
+        </ul>
+      </article>
+
+      <section id="education">
+        <h2>Education</h2>
+        <article>
+          <p><strong>B.S. in Information Technology</strong>, Western Governors University &ndash; <em>Anticipated: May 2027</em></p>
+          <p>Relevant coursework: Data Management &ndash; Foundations &amp; Applications, Network and Security &ndash; Foundations, Fundamentals of Information Security, Applied Probability and Statistics, Scripting and Programming &ndash; Foundations</p>
+        </article>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <hr />
+        <ul>
+          <li>ITIL 4 Foundations</li>
+          <li>CompTIA A+</li>
+          <li>CompTIA Network+</li>
+          <li>Google IT Support Specialization</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-date">
+      <p>Last updated on:</p>
+      <div id="date"></div>
+    </div>
+  </footer>
+
+  <script>
+    const currentDate = new Date().toLocaleDateString();
+    document.getElementById("date").textContent = currentDate;
+    console.log("Résumé loaded on:", currentDate);
+  </script>
+</body>
+</html>
