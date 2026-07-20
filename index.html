@@ -105,6 +105,24 @@
     padding: 22px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+  }
+  .card-thumbs {
+    display: flex;
+    gap: 8px;
+    margin: -22px -22px 16px;
+  }
+  .card-thumbs a {
+    flex: 1;
+    display: block;
+    line-height: 0;
+  }
+  .card-thumbs img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
   }
   .card h3 {
     margin: 0 0 4px;
@@ -213,7 +231,7 @@
       <p>I'm an IT and data professional completing a B.S. in Information Technology at Western Governors University,
       with 3+ years of operations experience auditing data, troubleshooting workflow issues, and partnering with
       Product and Engineering teams on system improvements. I reduced data/dashboard errors by 34% in my most recent
-      role while managing a portfolio of up to 350 accounts a month, and I bring that same audit-and-improve mindset to
+      role while managing a portfolio of up to 87 accounts a month, and I bring that same audit-and-improve mindset to
       technical projects &mdash; from relational databases to front-end web development.</p>
       <p>This site is where I collect the hands-on projects from my coursework and career that don't fit neatly on a
       resume. Take a look around, and reach out if you'd like to talk.</p>
@@ -240,12 +258,19 @@
       </div>
 
       <div class="card">
-        <span class="todo">TODO: add your live link or screenshot</span>
+        <div class="card-thumbs">
+          <a href="images/discover-louisiana-home.jpg" target="_blank" rel="noopener">
+            <img src="images/discover-louisiana-home.jpg" alt="Discover Louisiana homepage screenshot">
+          </a>
+          <a href="images/discover-louisiana-neworleans.jpg" target="_blank" rel="noopener">
+            <img src="images/discover-louisiana-neworleans.jpg" alt="Discover Louisiana New Orleans page screenshot">
+          </a>
+        </div>
         <div class="card-tag">Front-End Web Development</div>
         <h3>Discover Louisiana</h3>
-        <p>A responsive tourism website built with HTML, CSS, and JavaScript as part of WGU's Front-End Web
-        Development coursework.</p>
-        <a class="card-link" href="#" target="_blank" rel="noopener">View project &rarr;</a>
+        <p>A tourism website built as part of WGU's Front-End Web Development coursework, featuring a state
+        overview page and city-specific pages with custom layouts and imagery.</p>
+        <a class="card-link" href="images/discover-louisiana-home.jpg" target="_blank" rel="noopener">View full screenshot &rarr;</a>
       </div>
 
       <div class="card">
