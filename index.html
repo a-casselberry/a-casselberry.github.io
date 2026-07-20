@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashley Casselberry | IT & Data Portfolio</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5b5b5b;
+    --accent: #2952a3;
+    --accent-light: #eef2fb;
+    --border: #e2e2e2;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Calibri, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+  }
+  header.hero {
+    padding: 64px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  header.hero h1 {
+    margin: 0 0 8px;
+    font-size: 2.4rem;
+    letter-spacing: -0.02em;
+  }
+  header.hero p.tagline {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 1.1rem;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  nav a:hover { text-decoration: underline; }
+  .contact-links {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  .contact-links a { color: var(--accent); text-decoration: none; }
+  .contact-links a:hover { text-decoration: underline; }
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  section:last-of-type { border-bottom: none; }
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+  section > p.section-sub {
+    color: var(--muted);
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+  .about-body p { margin: 0 0 14px; }
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .badge {
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 640px) {
+    .project-grid { grid-template-columns: 1fr; }
+  }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card h3 {
+    margin: 0 0 4px;
+    font-size: 1.1rem;
+  }
+  .card .card-tag {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 16px;
+    flex-grow: 1;
+  }
+  .card a.card-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .card a.card-link:hover { text-decoration: underline; }
+  .todo {
+    background: #fff8e6;
+    border: 1px dashed #d9b64a;
+    color: #7a5c00;
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .writing-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .writing-list li {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .writing-list li:last-child { border-bottom: none; }
+  .writing-list h4 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+  }
+  .writing-list p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 32px;
+  }
+  @media (max-width: 640px) {
+    .skills-grid { grid-template-columns: 1fr; }
+  }
+  .skills-grid div h4 {
+    margin: 0 0 6px;
+    font-size: 0.95rem;
+    color: var(--accent);
+  }
+  .skills-grid div p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 24px 60px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Ashley Casselberry</h1>
+  <p class="tagline">IT &amp; Data Professional &mdash; B.S. Information Technology, Western Governors University (anticipated 2027)</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#writing">Writing &amp; Analysis</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="contact-links">
+    <!-- TODO: swap in your personal email if different, and confirm your LinkedIn URL -->
+    <a href="mailto:ashleycasselberry@outlook.com">ashleycasselberry@outlook.com</a>
+    &nbsp;&middot;&nbsp;
+    <a href="http://www.linkedin.com/in/ashleycasselberry" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-body">
+      <p>I'm an IT and data professional completing a B.S. in Information Technology at Western Governors University,
+      with 3+ years of operations experience auditing data, troubleshooting workflow issues, and partnering with
+      Product and Engineering teams on system improvements. I reduced data/dashboard errors by 34% in my most recent
+      role while managing a portfolio of up to 87 accounts a month, and I bring that same audit-and-improve mindset to
+      technical projects &mdash; from relational databases to front-end web development.</p>
+      <p>This site is where I collect the hands-on projects from my coursework and career that don't fit neatly on a
+      resume. Take a look around, and reach out if you'd like to talk.</p>
+    </div>
+    <div class="badge-row">
+      <span class="badge">ITIL 4 Foundations</span>
+      <span class="badge">CompTIA A+</span>
+      <span class="badge">CompTIA Network+</span>
+      <span class="badge">Google IT Support Specialization</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="section-sub">A mix of coursework and independent projects spanning UX design, front-end development, and process design.</p>
+    <div class="project-grid">
+
+      <div class="card">
+        <div class="card-tag">UX Design</div>
+        <h3>Explore Taniti</h3>
+        <p>A travel website concept designed and prototyped from user research through usability testing, as part of
+        WGU's User Experience Design coursework.</p>
+        <a class="card-link" href="https://acass44.wixsite.com/exploretaniti" target="_blank" rel="noopener">View live site &rarr;</a>
+      </div>
+
+      <div class="card">
+        <span class="todo">TODO: add your live link or screenshot</span>
+        <div class="card-tag">Front-End Web Development</div>
+        <h3>Discover Louisiana</h3>
+        <p>A responsive tourism website built with HTML, CSS, and JavaScript as part of WGU's Front-End Web
+        Development coursework.</p>
+        <a class="card-link" href="#" target="_blank" rel="noopener">View project &rarr;</a>
+      </div>
+
+      <div class="card">
+        <span class="todo">TODO: add your GitHub Pages link once live</span>
+        <div class="card-tag">Web Development</div>
+        <h3>Personal Resume Site</h3>
+        <p>A resume built and published with HTML/CSS and version-controlled through Git and GitHub, from WGU's Web
+        Development Foundations coursework.</p>
+        <a class="card-link" href="#" target="_blank" rel="noopener">View project &rarr;</a>
+      </div>
+
+      <div class="card">
+        <span class="todo">TODO: add a screenshot or shareable Trello link</span>
+        <div class="card-tag">Process &amp; Operations</div>
+        <h3>New Hire Onboarding Tracker</h3>
+        <p>A Trello-based onboarding tracker designed to simplify progress tracking and supervisor oversight for new
+        hires, built for WGU's Business Productivity Software coursework.</p>
+        <a class="card-link" href="#" target="_blank" rel="noopener">View project &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="writing">
+    <h2>Writing &amp; Analysis</h2>
+    <p class="section-sub">Selected coursework demonstrating analytical writing, technical communication, and IT leadership thinking. PDFs available on request &mdash; add links once you've uploaded them.</p>
+    <ul class="writing-list">
+      <li>
+        <h4>Legal Issues in Information Security &mdash; Case Analysis</h4>
+        <p>Analysis of legal and compliance considerations in information security practice.</p>
+      </li>
+      <li>
+        <h4>Systems Thinking &mdash; Case Study Analysis</h4>
+        <p>Applied systems-thinking frameworks to evaluate a real-world organizational problem.</p>
+      </li>
+      <li>
+        <h4>IT Leadership Foundations &mdash; Self-Assessment &amp; Meeting Analysis</h4>
+        <p>Reflective analysis of leadership style and team meeting effectiveness in an IT context.</p>
+      </li>
+      <li>
+        <h4>Technical Communication &mdash; AI Chatbots Report</h4>
+        <p>A technical writing sample examining the design and use of AI chatbots.</p>
+      </li>
+      <li>
+        <h4>Influential Communication Through Visual Design &amp; Storytelling</h4>
+        <p>A presentation applying visual design and storytelling principles to communicate a technical topic clearly.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h4>IT &amp; Technical</h4>
+        <p>Network Fundamentals &amp; Security, SQL (MySQL), Python Scripting, Git/GitHub, Relational Databases</p>
+      </div>
+      <div>
+        <h4>Data &amp; Reporting</h4>
+        <p>Data Auditing &amp; Validation, Excel, Salesforce Reporting &amp; CRM, Applied Statistics</p>
+      </div>
+      <div>
+        <h4>Web &amp; UX</h4>
+        <p>HTML/CSS/JavaScript, UX Design &amp; Prototyping, Figma</p>
+      </div>
+      <div>
+        <h4>Tools &amp; Platforms</h4>
+        <p>Salesforce, JIRA, Slack, Google Workspace, Microsoft Suite, Trello</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-bottom: none;">
+    <h2>Contact</h2>
+    <p class="section-sub">Open to Data Analytics and IT Operations roles &mdash; let's talk.</p>
+    <p><a href="mailto:ashleycasselberry@outlook.com">ashleycasselberry@outlook.com</a></p>
+    <p><a href="http://www.linkedin.com/in/ashleycasselberry" target="_blank" rel="noopener">linkedin.com/in/ashleycasselberry</a></p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Ashley Casselberry
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>
